@@ -1,4 +1,0 @@
-﻿  ConsoleApplication1.cpp
-d:\codeproject\c++\cplusdemovs\consoleapplication1\consoleapplication1\consoleapplication1.cpp(11): error C2065: “string”: 未声明的标识符
-d:\codeproject\c++\cplusdemovs\consoleapplication1\consoleapplication1\consoleapplication1.cpp(11): error C2146: 语法错误: 缺少“;”(在标识符“type”的前面)
-d:\codeproject\c++\cplusdemovs\consoleapplication1\consoleapplication1\consoleapplication1.cpp(11): error C2065: “type”: 未声明的标识符
