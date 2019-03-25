@@ -1,3 +1,2 @@
-﻿  leetcode.cpp
-d:\codeproject\c++\cplusdemovs\leetcode\leetcode\leetcode.cpp(13): warning C4018: “<”: 有符号/无符号不匹配
-  leetcode.vcxproj -> D:\CodeProject\c++\cPlusDemoVs\leetcode\Debug\leetcode.exe
+﻿  twoSum.cpp
+  leetcode.vcxproj -> D:\CodeProject\c++\leetcode-cplus\Debug\leetcode.exe
