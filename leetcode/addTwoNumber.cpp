@@ -33,7 +33,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 	prev = temp;
 	while (l1 != NULL && l2 != NULL) {
 		if (l1->val + l2->val + extra > 9) {
-			temp->val = (l1->val + l2->val) % 10;;
+			temp->val = (l1->val + l2->val + extra) % 10;;
 			extra = 1;
 		}
 		else {
@@ -50,14 +50,26 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 			temp = new ListNode(0);
 			prev->next = temp;
 			temp->val += extra;
-			if (temp->val > 9) {
-				temp->val %= 10;
-				temp->next = new ListNode(1);
-			}
 		}
 	}
 	else {
-		temp->val += extra;
+		while (temp != NULL) {
+			if (temp->val + extra > 9) {
+				temp->val = (temp->val + extra)%10;
+				extra = 1;
+			}
+			else {
+				temp->val = (temp->val + extra);
+				extra = 0;
+			}
+			prev = temp;
+			temp = temp->next;
+		}
+		if (extra) {
+			temp = new ListNode(0);
+			prev->next = temp;
+			temp->val += extra;
+		}
 	}
 	
 
@@ -66,9 +78,10 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 
 int main()
 {
-	ListNode a1(9), a2(9), a3(3);
-	ListNode b1(1), b2(6), b3(4);
+	ListNode a1(3), a2(7), a3(9);
+	ListNode b1(9), b2(2), b3(4);
 	a1.next = &a2;
+	b1.next = &b2;
 	ListNode *result = addTwoNumbers(&a1, &b1);
 	while (result != NULL) {
 		cout << result->val << endl;
