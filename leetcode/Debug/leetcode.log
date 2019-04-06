@@ -1,2 +1,3 @@
-﻿  twoSum.cpp
+﻿  addTwoNumber.cpp
+d:\codeproject\c++\leetcode-cplus\leetcode\addtwonumber.cpp(14): warning C4101: “data”: 未引用的局部变量
   leetcode.vcxproj -> D:\CodeProject\c++\leetcode-cplus\Debug\leetcode.exe
