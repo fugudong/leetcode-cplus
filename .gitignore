@@ -2,7 +2,7 @@ Visual Studio 2017
 Debug
 .vscode
 .vs
-.\leetcode\Debug
+leetcode\Debug
 # Prerequisites
 *.d
 
